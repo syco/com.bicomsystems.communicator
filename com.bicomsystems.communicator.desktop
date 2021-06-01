@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=Communicator
+GenericName=SIP client
+Comment=Fully featured, easy to use SIP client with a Qt based UI
+X-GNOME-FullName=Communicator SIP client
+Type=Application
+Exec=/app/start.sh %u
+Icon=com.bicomsystems.communicator
+StartupNotify=false
+Terminal=false
+Categories=Qt;Network;Telephony;

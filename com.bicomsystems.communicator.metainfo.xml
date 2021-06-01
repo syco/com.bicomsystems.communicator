@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.bicomsystems.communicator</id>
+  <name>Communicator</name>
+  <project_license>GPL-3.0+</project_license>
+  <metadata_license>CC0-1.0</metadata_license>
+  <summary>Communicator SIP client</summary>
+  <developer_name>Bicom Systems</developer_name>
+  <description>
+    <p>
+      Communicator, a fully featured, easy to use SIP client for Linux.
+    </p>
+  </description>
+
+  <launchable type="desktop-id">com.bicomsystems.communicator.desktop</launchable>
+
+  <url type="homepage">https://github.com/AGProjects/communicator-qt</url>
+  <url type="bugtracker">https://github.com/AGProjects/communicator-qt/issues</url>
+  <url type="help">http://icancommunicator.com/help/</url>
+
+  <provides>
+    <binary>communicator</binary>
+  </provides>
+
+  <content_rating type="oars-1.1">
+    <content_attribute id="social-chat">intense</content_attribute>
+    <content_attribute id="social-info">moderate</content_attribute>
+    <content_attribute id="social-audio">intense</content_attribute>
+    <content_attribute id="social-contacts">intense</content_attribute>
+    <content_attribute id="money-purchasing">moderate</content_attribute>
+  </content_rating>
+</component>

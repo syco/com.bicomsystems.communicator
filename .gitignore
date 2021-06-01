@@ -1,0 +1,4 @@
+*.flatpak
+/.flatpak-builder
+/build-dir
+/repo.com.bicomsystems.communicator

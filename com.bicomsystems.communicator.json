@@ -1,0 +1,87 @@
+{
+  "id": "com.bicomsystems.communicator",
+  "command": "/app/start.sh",
+  "separate-locales": false,
+  "runtime": "org.kde.Platform",
+  "runtime-version": "5.12",
+  "sdk": "org.kde.Sdk",
+  "base": "io.qt.qtwebkit.BaseApp",
+  "base-version": "5.12",
+  "finish-args": [
+    "--device=all",
+    "--filesystem=home",
+    "--share=ipc",
+    "--share=network",
+    "--socket=pulseaudio",
+    "--socket=x11",
+    "--talk-name=org.freedesktop.Notifications",
+    "--talk-name=org.gtk.Notifications",
+    "--talk-name=org.kde.StatusNotifierWatcher"
+  ],
+  "modules": [
+    {
+      "name": "capnproto",
+      "sources": [
+        {
+          "type": "archive",
+          "url": "https://capnproto.org/capnproto-c++-0.5.3.1.tar.gz",
+          "sha256": "04b5c56805895fd15751167ab04c99fa86602110ea7591ef611695de9923911b"
+        }
+      ],
+      "buildsystem": "simple",
+      "build-commands": [
+        "autoreconf -i",
+        "./configure --prefix=/app",
+        "make",
+        "make install"
+      ]
+    },
+    {
+      "name": "communicator",
+      "modules": [
+      ],
+      "sources": [
+        {
+          "type": "file",
+          "url": "https://downloads.bicomsystems.com/desktop/glocom/public/6.3.0/communicator/Communicator-6.3.0.deb",
+          "sha256": "9236a1cd831e68da975b28f0001d8ac37259b87ec0c5b7544b642004629f9200"
+        },
+        {
+          "type": "file",
+          "path": "com.bicomsystems.communicator.desktop"
+        },
+        {
+          "type": "file",
+          "path": "com.bicomsystems.communicator.png"
+        },
+        {
+          "type": "file",
+          "path": "com.bicomsystems.communicator.metainfo.xml"
+        },
+        {
+          "type": "file",
+          "path": "start.sh"
+        }
+      ],
+      "buildsystem": "simple",
+      "build-commands": [
+        "ar x Communicator-6.3.0.deb",
+        "tar xf data.tar.xz -C /app",
+        "rm -Rf Communicator-6.3.0.deb control.tar.gz data.tar.xz debian-binary",
+        "chmod -R 755 /app/opt/Communicator",
+        "sed -i 's;/opt;/app/opt;g' /app/opt/Communicator/bin/communicator",
+        "sed -i 's;/opt;/app/opt;g' /app/opt/Communicator/bin/qt.conf",
+        "mv start.sh /app/start.sh",
+        "chmod +x /app/start.sh"
+      ],
+      "post-install": [
+        "install -Dm644 com.bicomsystems.communicator.desktop /app/share/applications/com.bicomsystems.communicator.desktop",
+        "install -Dm644 com.bicomsystems.communicator.desktop /app/usr/share/applications/com.bicomsystems.communicator.desktop",
+        "install -Dm644 com.bicomsystems.communicator.png /app/share/icons/com.bicomsystems.communicator.png",
+        "install -Dm644 com.bicomsystems.communicator.png /app/usr/share/icons/com.bicomsystems.communicator.png",
+        "install -Dm644 com.bicomsystems.communicator.metainfo.xml /app/share/metainfo/com.bicomsystems.communicator.metainfo.xml",
+        "install -Dm644 com.bicomsystems.communicator.metainfo.xml /app/usr/share/metainfo/com.bicomsystems.communicator.metainfo.xml"
+      ]
+    }
+  ]
+}
