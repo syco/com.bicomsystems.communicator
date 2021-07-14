@@ -3,10 +3,10 @@
   "command": "/app/start.sh",
   "separate-locales": false,
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.12",
+  "runtime-version": "5.15",
   "sdk": "org.kde.Sdk",
   "base": "io.qt.qtwebkit.BaseApp",
-  "base-version": "5.12",
+  "base-version": "5.15",
   "finish-args": [
     "--device=all",
     "--filesystem=home",

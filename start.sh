@@ -3,10 +3,8 @@
 APP_NAME="Communicator"
 
 export QT_PLUGIN_PATH="/app/opt/$APP_NAME/lib/plugins"
-export LD_LIBRARY_PATH="/app/opt/$APP_NAME/lib"
+export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/app/opt/$APP_NAME/lib"
 export QT_AUTO_SCREEN_SCALE_FACTOR=0
-export QT_XCB_GL_INTEGRATION=none
-export LIBGL_ALWAYS_INDIRECT=1
 
 #check if input arguments contain 'glocom://'
 flag1=`echo $@|awk '{print match($0,"glocom://")}'`;
