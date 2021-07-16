@@ -7,6 +7,7 @@ X-GNOME-FullName=Communicator SIP client
 Type=Application
 Exec=/app/start.sh %u
 Icon=com.bicomsystems.communicator
+StartupWMClass=Communicator
 StartupNotify=false
 Terminal=false
 Categories=Qt;Network;Telephony;
