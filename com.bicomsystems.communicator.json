@@ -43,8 +43,8 @@
       "sources": [
         {
           "type": "file",
-          "url": "https://downloads.bicomsystems.com/desktop/glocom/public/6.4.0/communicator/Communicator-6.4.0.deb",
-          "sha256": "fba980f3d08f581f42b1eb78991726c1b5689555c6777133b0c3f0b7229d880a"
+          "url": "https://downloads.bicomsystems.com/desktop/glocom/public/6.4.0.1/communicator/Communicator-6.4.0.1.deb",
+          "sha256": "6d7767d18e133387c9e63da03fafd3247da68f4daf8dc4f0f5d694b85f3494ee"
         },
         {
           "type": "file",
@@ -65,9 +65,9 @@
       ],
       "buildsystem": "simple",
       "build-commands": [
-        "ar x Communicator-6.4.0.deb",
+        "ar x Communicator-6.4.0.1.deb",
         "tar xf data.tar.xz -C /app",
-        "rm -Rf Communicator-6.4.0.deb control.tar.gz data.tar.xz debian-binary",
+        "rm -Rf Communicator-6.4.0.1.deb control.tar.gz data.tar.xz debian-binary",
         "chmod -R 755 /app/opt/Communicator",
         "sed -i 's;/opt;/app/opt;g' /app/opt/Communicator/bin/communicator",
         "sed -i 's;/opt;/app/opt;g' /app/opt/Communicator/bin/qt.conf",
