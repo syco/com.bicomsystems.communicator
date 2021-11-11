@@ -14,9 +14,9 @@
 
   <launchable type="desktop-id">com.bicomsystems.communicator.desktop</launchable>
 
-  <url type="homepage">https://github.com/AGProjects/communicator-qt</url>
-  <url type="bugtracker">https://github.com/AGProjects/communicator-qt/issues</url>
-  <url type="help">http://icancommunicator.com/help/</url>
+  <url type="homepage">https://www.bicomsystems.com/</url>
+  <url type="bugtracker">https://www.bicomsystems.com/</url>
+  <url type="help">https://www.bicomsystems.com/</url>
 
   <provides>
     <binary>communicator</binary>
