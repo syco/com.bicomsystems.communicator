@@ -3,10 +3,10 @@
   "command": "/app/start.sh",
   "separate-locales": false,
   "runtime": "org.kde.Platform",
-  "runtime-version": "5.15-21.08",
+  "runtime-version": "5.15-22.08",
   "sdk": "org.kde.Sdk",
   "base": "io.qt.qtwebkit.BaseApp",
-  "base-version": "5.15-21.08",
+  "base-version": "5.15-22.08",
   "finish-args": [
     "--device=all",
     "--filesystem=home",
@@ -26,9 +26,9 @@
       "sources": [
         {
           "type": "file",
-          "url": "https://downloads.bicomsystems.com/desktop/glocom/public/6.5.1/communicator/Communicator-6.5.1.deb",
+          "url": "https://downloads.bicomsystems.com/desktop/glocom/public/6.6.1/communicator/Communicator-6.6.1.deb",
           "dest-filename": "Communicator.deb",
-          "sha256": "8cd45b33632fe6ef0f115fd3d26af758d477801305d0332860cb10221aad5005"
+          "sha256": "edc87cb8f86829c9ef34436ad9b7a474b75bdc044036eed80ad5c11cf94ca094"
         },
         {
           "type": "file",
