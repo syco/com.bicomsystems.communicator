@@ -59,11 +59,8 @@
         "chmod +x /app/start.sh"
       ],
       "post-install": [
-        "install -Dm644 com.bicomsystems.communicator.desktop /app/share/applications/com.bicomsystems.communicator.desktop",
         "install -Dm644 com.bicomsystems.communicator.desktop /app/usr/share/applications/com.bicomsystems.communicator.desktop",
-        "install -Dm644 com.bicomsystems.communicator.png /app/share/icons/com.bicomsystems.communicator.png",
         "install -Dm644 com.bicomsystems.communicator.png /app/usr/share/icons/com.bicomsystems.communicator.png",
-        "install -Dm644 com.bicomsystems.communicator.metainfo.xml /app/share/metainfo/com.bicomsystems.communicator.metainfo.xml",
         "install -Dm644 com.bicomsystems.communicator.metainfo.xml /app/usr/share/metainfo/com.bicomsystems.communicator.metainfo.xml"
       ]
     }
