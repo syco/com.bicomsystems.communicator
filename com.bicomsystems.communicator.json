@@ -59,8 +59,8 @@
         "chmod +x /app/start.sh"
       ],
       "post-install": [
-        "install -Dm644 ${FLATPAK_ID}.appdata.xml /app/usr/share/appdata/${FLATPAK_ID}.appdata.xml",
-        "install -Dm644 ${FLATPAK_ID}.desktop /app/usr/share/applications/${FLATPAK_ID}.desktop",
+        "install -Dm644 ${FLATPAK_ID}.appdata.xml /app/share/appdata/${FLATPAK_ID}.appdata.xml",
+        "install -Dm644 ${FLATPAK_ID}.desktop /app/share/applications/${FLATPAK_ID}.desktop",
         "install -Dm644 ${FLATPAK_ID}.png /app/share/icons/hicolor/48x48/apps/${FLATPAK_ID}.png"
       ]
     }
