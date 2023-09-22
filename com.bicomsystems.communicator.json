@@ -40,7 +40,7 @@
         },
         {
           "type": "file",
-          "path": "com.bicomsystems.communicator.appdata.xml"
+          "path": "com.bicomsystems.communicator.metainfo.xml"
         },
         {
           "type": "file",
@@ -59,7 +59,7 @@
         "chmod +x /app/start.sh"
       ],
       "post-install": [
-        "install -Dm644 ${FLATPAK_ID}.appdata.xml /app/share/appdata/${FLATPAK_ID}.appdata.xml",
+        "install -Dm644 ${FLATPAK_ID}.metainfo.xml /app/share/metainfo/${FLATPAK_ID}.metainfo.xml",
         "install -Dm644 ${FLATPAK_ID}.desktop /app/share/applications/${FLATPAK_ID}.desktop",
         "install -Dm644 ${FLATPAK_ID}.png /app/share/icons/hicolor/512x512/apps/${FLATPAK_ID}.png",
         "install -Dm644 ${FLATPAK_ID}.png /app/usr/share/icons/${FLATPAK_ID}.png"
