@@ -63,6 +63,7 @@
         "chmod -R 755 /app/Communicator",
         "sed -i 's;LD_LIBRARY_PATH=\"/;LD_LIBRARY_PATH=\"$LD_LIBRARY_PATH:/;g' /app/Communicator/bin/communicator",
         "sed -i 's;/opt;/app;g' /app/Communicator/bin/communicator",
+        "sed -i '/export QT_AUTO_SCREEN_SCALE_FACTOR=0/a export QT_QPA_PLATFORM=xcb' /app/Communicator/bin/communicator",
         "sed -i 's;/opt;/app;g' /app/Communicator/bin/qt.conf"
       ],
       "post-install": [
