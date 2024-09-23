@@ -5,7 +5,7 @@
   <project_license>GPL-3.0+</project_license>
   <metadata_license>CC0-1.0</metadata_license>
   <summary>Communicator SIP client</summary>
-  <developer>
+  <developer id="com.bicomsystems">
     <name>Bicom Systems</name>
   </developer>
   <description>
@@ -16,21 +16,6 @@
 
   <launchable type="desktop-id">com.bicomsystems.communicator.desktop</launchable>
 
-  <screenshots>
-    <screenshot type="default">
-      <image>https://www.bicomsystems.com/wp-content/uploads/2020/04/glocom-first-1.png</image>
-    </screenshot>
-    <screenshot>
-      <image>https://www.bicomsystems.com/wp-content/uploads/2020/04/glocom_business_softphone-1-1.png</image>
-    </screenshot>
-    <screenshot>
-      <image>https://www.bicomsystems.com/wp-content/uploads/2020/04/glocom-business-conference.png</image>
-    </screenshot>
-    <screenshot>
-      <image>https://www.bicomsystems.com/wp-content/uploads/2020/04/gloCOM-video.png</image>
-    </screenshot>
-  </screenshots>
-
   <url type="homepage">https://www.bicomsystems.com/</url>
   <url type="bugtracker">https://www.bicomsystems.com/</url>
   <url type="help">https://www.bicomsystems.com/</url>
@@ -40,6 +25,7 @@
   </provides>
 
   <releases>
+    <release version="7.3.0" date="2024-09-23" />
     <release version="7.2.0" date="2024-05-13" />
     <release version="7.1.4" date="2024-04-18" />
     <release version="7.1.3" date="2024-04-02" />
