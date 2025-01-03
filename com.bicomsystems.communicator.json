@@ -3,7 +3,7 @@
   "command": "/app/Communicator/bin/communicator",
   "separate-locales": false,
   "runtime": "org.freedesktop.Platform",
-  "runtime-version": "23.08",
+  "runtime-version": "24.08",
   "sdk": "org.freedesktop.Sdk",
   "finish-args": [
     "--device=all",
@@ -38,9 +38,9 @@
       "sources": [
         {
           "type": "file",
-          "url": "https://downloads.bicomsystems.com/desktop/glocom/public/7.3.0/communicator/Communicator-7.3.0.deb",
+          "url": "https://downloads.bicomsystems.com/desktop/glocom/public/7.3.1.0/communicator/Communicator-7.3.1.0.deb",
           "dest-filename": "Communicator.deb",
-          "sha256": "9451c1fca974a68e0fe8b93ad05c3d93a4f4515510106756252a1c5dd068508d"
+          "sha256": "8c984b3b0e3d739b451c240cda57b825ca41f7559637cd827ab4c6f7a5f0b005"
         },
         {
           "type": "file",
