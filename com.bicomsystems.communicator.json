@@ -38,9 +38,9 @@
       "sources": [
         {
           "type": "file",
-          "url": "https://downloads.bicomsystems.com/desktop/glocom/public/7.4.0/communicator/Communicator-7.4.0.deb",
+          "url": "https://downloads.bicomsystems.com/desktop/glocom/public/7.4.0.1/communicator/Communicator-7.4.0.1.deb",
           "dest-filename": "Communicator.deb",
-          "sha256": "ac7f2ea426b1208b7e35b30faaef4f74033c26418f3c4721ce5e03dea1b6bef6"
+          "sha256": "5433819ce7264d02d672075cf9f8cd94293a1e19ca4ef83c01f7c7df702c5e3c"
         },
         {
           "type": "file",
