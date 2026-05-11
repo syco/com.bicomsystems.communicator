@@ -39,7 +39,7 @@
           "type": "file",
           "url": "https://downloads.bicomsystems.com/desktop/glocom/public/7.6.0.3/communicator/Communicator-7.6.0.3.deb",
           "dest-filename": "Communicator.deb",
-          "sha256": "204df63d3fba1b9f7e2404cc76ebae23a1f7c86a1d6b4bd6b1ae0a15d5d7c399"
+          "sha256": "166c2ef3218dc1d97438c4548f360b3633630af3b40425f2adbf8fc26564f474"
         },
         {
           "type": "file",
